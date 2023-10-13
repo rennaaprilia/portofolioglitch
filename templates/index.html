@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
     <title>-- Portofolio --</title>
   </head>
   <body>
@@ -44,7 +44,7 @@
     
 <!-- Awal Home -->
 <div class="jumbotron text-center" id="home">
-    <img src="profil.jpeg" alt="" width="200" class="rounded-circle img-thumbnail">
+    <img src="static/img/profil.jpeg" alt="" width="200" class="rounded-circle img-thumbnail">
     <h1 class="display-4">Renna Aprilia</h1>
     <p class="lead">Saya adalah Mahasiswa MSIB LearningX Batch 5</p>
 
@@ -78,11 +78,11 @@
   <div class="row text-center">
     <h2>Education</h2>
   </div>
-  <div>
+  <div class="row"> 
     <div class="col-6">
       <div class="card" style="width: 35rem;">
         <h5 class="card-title text-center fw-bold">SMK Negeri 3 Depok</h5>
-        <img src="SMKN.jpeg" class="card-img-top" alt="...">
+        <img src="static/img/SMKN.jpeg" class="card-img-top" alt="...">
         <div class="card-body">
           <p class="card-text text-center">2018 - 2021</p>
           <p class="card-text text-center fw-bold">Jurusan Teknik Komputer dan Jaringan</p>
@@ -92,7 +92,7 @@
     <div class="col-6">
       <div class="card" style="width: 35rem;">
         <h5 class="card-title text-center fw-bold">Universitas Sebelas Maret</h5>
-        <img src="Universitas.jpeg" class="card-img-top" alt="...">
+        <img src="static/img/Universitas.jpeg" class="card-img-top" alt="...">
         <div class="card-body">
           <p class="card-text text-center">2021 - Sekarang</p>
           <p class="card-text text-center fw-bold">Program Studi D3 Teknik Informatika</p>
@@ -113,7 +113,7 @@
 <div class="col-6">
   <div class="card" style="width: 34rem;">
     <h5 class="card-title text-center fw-bold">Game Boxspite</h5>
-    <img src="Game Boxspite.JPG" class="card-img-top" alt="...">
+    <img src="static/img/Game Boxspite.JPG" class="card-img-top" alt="...">
     <div class="card-body">
       <p class="card-text">Boxspite merupakan game shooter dengan latar labirin. Dalam game ini player dilengkapi dengan tembakan. Misi utamanya adalah menembak cube berwarna hijau dalam waktu 2 menit dan meraih point akhir sebanyak 15 point.</p>
     </div>
@@ -122,7 +122,7 @@
 <div class="col-6">
   <div class="card" style="width: 34rem;">
     <h5 class="card-title text-center fw-bold">Kenangan App</h5>
-    <img src="Kenangan App.jpeg" class="card-img-top" alt="...">
+    <img src="static/img/Kenangan App.jpeg" class="card-img-top" alt="...">
     <div class="card-body">
       <p class="card-text">Kenangan App merupakan sebuah aplikasi berbasis website yang memberikan informasi mengenai tenant dan menu yang tersedia di Food Court Kenangan. Selain memberikan informasi menu, aplikasi ini juga menyediakan fitur pembelian atau pemesanan makanan yang dapat mempermudah user secara cepat dan efisien.</p>
     </div>
